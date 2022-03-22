@@ -2,11 +2,7 @@ pipeline {
   agent any
   stages {
   stage('Stage 1') {
-      steps {
-        script {
-          echo "Stage 1"
-        }
-      }
+      sh test.sh
     }
   stage('Stage 2') {
       steps {
@@ -14,9 +10,6 @@ pipeline {
           echo 'Stage 2'
         }
       }
-    }
-  stage('Stage 3'){
-        sh ./test.sh
     }
   }
 }
