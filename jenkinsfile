@@ -10,11 +10,10 @@ pipeline {
     }
   stage('Stage 2') {
       steps {
-        script {
-          chmod +x test.sh
-          sh test.sh
-        }
+        chmod +x test.sh
+        sh test.sh
       }
     }
   }
 }
+
