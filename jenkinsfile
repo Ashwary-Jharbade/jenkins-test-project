@@ -10,12 +10,12 @@ pipeline {
     }
   stage('Stage 2.1') {
       steps {
-        chmod +x test.sh
+        chmod +x './test.sh'
       }
     }
   stage('Stage 2') {
       steps {
-        sh test.sh
+        sh './test.sh'
       }
     }
   }
