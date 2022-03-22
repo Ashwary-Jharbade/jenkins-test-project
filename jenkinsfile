@@ -16,10 +16,7 @@ pipeline {
       }
     }
   stage('Stage 3'){
-    steps {
-        sh "chmod +x -R ${env.WORKSPACE}"
-        sh "./my-script.sh"
+        sh ./my-script.sh
     }
-  }
   }
 }
