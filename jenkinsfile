@@ -16,7 +16,7 @@ pipeline {
       }
     }
   stage('Stage 3'){
-        sh ./my-script.sh
+        sh ./test.sh
     }
   }
 }
